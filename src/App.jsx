@@ -1,7 +1,17 @@
+import Project from "./components/Project";
+import ProjectLists from "./components/ProjectLists";
+
 function App() {
   return (
     <>
-      <h1 className="my-8 text-center text-5xl font-bold">Hello World</h1>
+      <div className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 bg-slate-700">
+        <ProjectLists />
+      </div>
+      <div>
+        {/* <h1 className="my-8 text-center text-5xl font-bold">Hello World</h1>
+        <Project /> */}
+        <Project />
+      </div>
     </>
   );
 }
