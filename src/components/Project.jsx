@@ -21,9 +21,9 @@ function Project({ project, updateProject }) {
         </button>
         <ProjectDetails
           isEdit={editingProject}
-          title="titleTest"
-          desc="descTest"
-          due="dueTest"
+          title={project.title}
+          desc={project.title}
+          due={project.title}
         />
         <Tasks />
       </div>

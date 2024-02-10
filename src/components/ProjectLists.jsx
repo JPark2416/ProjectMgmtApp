@@ -1,4 +1,4 @@
-function ProjectLists({ projects, onAddProject }) {
+function ProjectLists({ projects, onAddProject, onSelectProject }) {
   return (
     <div className="bg-red-400 px-2 py-8 m-2 rounded-lg">
       <h2>ProjectLists</h2>
@@ -12,7 +12,9 @@ function ProjectLists({ projects, onAddProject }) {
       <div>
         {projects.map((project, key) => (
           <p key={key}>
-            <button>{project.title}</button>
+            <button onClick={() => onSelectProject(key)}>
+              {project.title}
+            </button>
           </p>
         ))}
       </div>

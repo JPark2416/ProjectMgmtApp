@@ -1,11 +1,7 @@
-function Tasks() {
+function Tasks({}) {
   return (
     <div>
-      <p>Task</p>
-      <p>Task</p>
-      <p>Task</p>
-      <p>Task</p>
-      <p>Task</p>
+      <h1>Task</h1>
     </div>
   );
 }
