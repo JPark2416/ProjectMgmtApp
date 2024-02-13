@@ -21,8 +21,12 @@ function ProjectsSideBar({
 
           if (project.id === selectedProjectId) {
             cssClass += "bg-stone-800 text-stone-200";
+            cssClass =
+              "w-full text-left px-2 py-1 rounded-sm my-1 text-stone-400 hover:text-stone-200 hover:bg-stone-900 bg-red-600";
           } else {
             cssClass += "text-stone-400";
+            cssClass =
+              "w-full text-left px-2 py-1 rounded-sm my-1 text-stone-400 hover:text-stone-200 hover:bg-stone-900 bg-stone-600";
           }
 
           return (
